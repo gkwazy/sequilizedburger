@@ -1,0 +1,35 @@
+<h1 id="title">
+    Welcome to good burger home of the good burger can i take your order.</h1>
+<div class="pic">
+
+</div>
+
+<div class="burgers_ready">
+    <h2>here are some burgers that you have ordered that you can eat.</h2>
+    <ul>
+        {{#each burger_name}} {{#unless devoured}} {{> burgerButtons devoured=true}} {{/unless}} {{/each}}
+    </ul>
+</div>
+
+
+
+<div class="burgers_eaten">
+    <h2>here are burger that have been devoured</h2>
+
+    <ul>
+        {{#each burger_name}} {{#if devoured}} {{> burgerButtons devoured=false}} {{/if}} {{/each}}
+    </ul>
+</div>
+<div class="order">
+    <h2>you can place a order here for you next burger.</h2>
+    <form class="create-form">
+
+        <div class="form-group">
+            <label for="ca">Burger Order:</label>
+            <input type="text" id="ca" name="name">
+        </div>
+
+
+        <button type="submit">Add order</button>
+    </form>
+</div>
