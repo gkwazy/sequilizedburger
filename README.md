@@ -1,0 +1,2 @@
+# sequilizedburger
+This application was an attempt to better understand sequelize and to be able to more confidently use it in the future. The application lets the user enter in a “order”. The application can then save the order and ether delete it or change the state of the order to have it be “eaten” or be on the customers table. The data is stored on a heroku server with a SQL database so that the orders are saved with the page refreshing. 
